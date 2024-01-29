@@ -1,0 +1,182 @@
+#  LISTA DE CAUSAS DE MUERTES:
+#  1.8.8 https://hub.spigotmc.org/nexus/service/local/repositories/snapshots/archive/org/spigotmc/spigot-api/1.8.8-R0.1-SNAPSHOT/spigot-api-1.8.8-R0.1-20160221.082514-43-javadoc.jar/!/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+#  Mas Reciente https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+Opcional:
+  prefix: "&8[&c&lMUERTE&r&8] "
+  no-permisos: '&c¡No tienes acceso a esta función!' #lcdeathmessages.reload
+  sonidos:
+    PROJECTILE:
+      SOUND: ENDERMAN_DEATH
+      VOLUMEN: 1.0
+      PITCH: 2.0
+    DEFAULT:
+      SOUND: ENDERMAN_DEATH
+      VOLUMEN: 1.0
+      PITCH: 2.0
+NO_TAG:
+  FIRE:
+    - '&c¡%player% se ha quemado!'
+    - '&c¡%player% murió entre las llamas!'
+    - '&c¡%player% no soportó las altas temperaturas y se quemó!'
+  #NO ENCONTRE DIFERENCIAS ENTRE FIRE Y FIRE TICK XDD
+  FIRE_TICK:
+    - '&c¡%player% se ha quemado!'
+    - '&c¡%player% murió entre las llamas!'
+    - '&c¡%player% no soportó las altas temperaturas y se quemó!'
+  LAVA:
+    - '&c¡Parece que %player% no vió que el Jacuzzi estaba muy caliente!'
+  DROWNING:
+    - '&c¡%player% pensó que era un pez y se ahogó!'
+    - '&c¡%player% se sumergió demasiado en el agua!'
+    - '&c¡%player% se ahogó!'
+  CONTACT:
+    - '&c¡%player% se pinchó con un Cactus!'
+    - '&c%player% fue asesinado por un Cactus!'
+  FALL:
+    - '&c¡%player% se romíó las patas!'
+    - '&c¡%player% calló de muy alto!'
+    - '&c¡%player% se partió callendo de muy alto!'
+  BLOCK_EXPLOSION: []
+  ENTITY_EXPLOSION:
+    TNT:
+      - '&c¡%player% explotó por culpa de una Dinamita!'
+      - '&cUna TNT acabó con %player%.'
+    END_CRYSTAL:
+      - '&c¡%player% pensó que un EndCristal no lo mataría!'
+      - '&c¡%player% fue abatido por un EndCristal!'
+    CREEPER:
+      - '&c¡Un Creeper acabo con %player%!'
+      - '&c¡%player% murió por culpa de un Creeper!'
+    Otro:
+      - '&c¡Una explosión acabó con %player%!'
+      - '&c%player% explotó.'
+  ENTITY_ATTACK:
+    NO_NAME:
+      - '&cUn %entity% mató a %player%.'
+    WITH_NAME:
+      - '&c¡%entity% mató a %player%!'
+  LIGHTNING:
+    - '&c¡A %player% le cayó un Rayo!'
+    - '&c%player% fue alcanzado por un Rayo.'
+  SUICIDE:
+    - '&c%player% se susuido :C'
+    - '&c¡%player% se ha suicidado! :c'
+  STARVATION:
+    - '&c¡%player% murió de hambre!'
+    - '&c¡%player% murió por hambruna!'
+    - '&c¡%player% no come y acabó muriendo!'
+  POISON:
+    - '&c%player% murió por un efecto de poción.'
+    - '&c¡%player% jugo con las pociones y murió!'
+  MAGIC:
+    - '&c%player% murió magicamente :0'
+    - '&c%player% murió de forma extraña...'
+  WITHER:
+    - '&c¡%player% murió por el efecto Wither!'
+  THORNS:
+    - '&c¡%player% fue abatido por las espinas de una armadura!'
+  Otra:
+    - '&c%player% murió'
+  VOID:
+    - '&c¡%player% calló al vacio!'
+    - '&c¡%player% se calló al fondo del mundo!'
+  PROJECTILE:
+    ARROW:
+      - '&c%player% fue alcanzado por una flecha y murió.'
+    SNOWBALL:
+      - '&c%player% murió por una bola de nieve.'
+    Otros:
+      - '&c%player% murió por un proyectíl.'
+  SUFFOCATION:
+    - '%player% murió asfixiado.'
+    - '%player% murió sofocado.'
+  PLAYER_ATTACK:
+    - '&c%player% fue asesinado por %killer%'
+    - '&c%player% murió atacado por %killer%'
+TAGGED:
+  FIRE:
+    - '&c¡%player% se ha quemado por culpa de %killer%!'
+    - '&c¡%player% murió entre las llamas por cula de %killer%!'
+    - '&c¡%player% no soportó las altas temperaturas y se quemó por %killer%!'
+  #NO ENCONTRE DIFERENCIAS ENTRE FIRE Y FIRE TICK XDD
+  FIRE_TICK:
+    - '&c¡%player% se ha quemado escapando de %killer%!'
+    - '&c¡%player% murió entre las llamas escapando de %killer%!'
+    - '&c¡%player% no soportó las altas temperaturas y se quemó hullendo de %killer%!'
+  LAVA:
+    - '&c¡Parece que %player% no vió que el Jacuzzi estaba muy caliente hullendo de %killer%!'
+  DROWNING:
+    - '&c¡%player% pensó que era un pez y se ahogó escapando de %killer%!'
+    - '&c¡%player% se sumergió demasiado en el agua por escapar de %killer%!'
+    - '&c¡%player% se ahogó hullendo de %killer%!'
+  CONTACT:
+    - '&c¡%player% se pinchó con un Cactus escapando de %killer%!'
+    - '&c%player% fue asesinado por un Cactus hullendo de %killer%!'
+  FALL:
+    - '&c¡%player% se romíó las patas escapando de %killer%!'
+    - '&c¡%player% calló de muy alto hullendo de %killer%!'
+    - '&c¡%player% se partió callendo de muy alto por culpa de %killer%!'
+  BLOCK_EXPLOSION: []
+  ENTITY_EXPLOSION:
+    TNT:
+      - '&c¡%player% explotó por culpa de una Dinamita apollado de %killer%!'
+      - '&cUna TNT acabó con %player% hullendo de %killer%.'
+    END_CRYSTAL:
+      - '&c¡%player% pensó que un EndCristal no lo mataría mientras huía de %killer%!'
+      - '&c¡%player% fue abatido por un EndCristal escapando de %killer%!'
+    CREEPER:
+      - '&c¡Un Creeper acabo con %player% mientras huía de %killer%!'
+      - '&c¡%player% murió por culpa de un Creeper, asistido por %killer%!'
+    Otro:
+      - '&c¡Una explosión acabó con %player% escapando de %killer%!'
+      - '&c%player% explotó hullendo de %killer%.'
+  ENTITY_ATTACK:
+    NO_NAME:
+      - '&cUn %entity% asesistió, matando a %player% mientras huía de %killer%.'
+    WITH_NAME:
+      - '&c¡%entity% mató a %player% mientras escapaba de %killer%!'
+  #                                                                           IMPORTANTE
+  PLAYER_ATTACK:
+    - '&c%player% fue asesinado por %killer%'
+    - '&c%player% murió atacado por %killer%'
+  LIGHTNING:
+    - '&c¡A %player% le cayó un Rayo mientras escapaba de %killer%!'
+    - '&c%player% fue alcanzado por un Rayo mientras huía de %killer%.'
+  SUICIDE:
+    - '&c%player% se susuido, por no poderle ganar a %killer% :)'
+    - '&c¡%player% se ha suicidado! Pero fue asistido por %killer% :D'
+  STARVATION:
+    - '&c¡%player% murió de hambre mientras huía de %killer%!'
+    - '&c¡%player% murió por hambruna mientras escapaba de %killer%!'
+    - '&c¡%player% no come y acabó muriendo mientras escapaba de %killer%!'
+  POISON:
+    - '&c%player% murió por un efecto de poción mientras escapaba de %killer%.'
+    - '&c¡%player% jugo con las pociones y murió mientras huía de %killer%!'
+  MAGIC:
+    - '&c%player% murió magicamente :0 Mientras huía de %killer%'
+    - '&c%player% estaba huyendo de %killer% cuando, murió de forma extraña...'
+  WITHER:
+    - '&c¡%player% murió por el efecto Wither apoyado por %killer%!'
+  THORNS:
+    FROM_TAGGER:
+      - '&c¡%player% murió por las espinas de la armadura de %killer%!'
+    ELSE:
+      - '&c¡%player% fue abatido por las espinas de una armadura huyendo de %killer%!'
+  Otra:
+    - '&c%player% murió huyendo de %killer%'
+  VOID:
+    - '&c¡%player% calló al vacio mientras escapaba de %killer%!'
+    - '&c¡%player% se calló al fondo del mundo mientras huía de %killer%!'
+  PROJECTILE:
+    ARROW:
+      FROM_TAGGER:
+        - '&c¡%player% murió por un disparo de %killer%!'
+      ELSE:
+        - '&c¡%player% murió por una flecha mientras huía de %killer%!'
+    SNOWBALL:
+      - '&c%player% murió por una bola de nieve mientras huía de %killer%.'
+    Otros:
+      - '&c%player% murió por un proyectíl huyendo de %killer%.'
+  SUFFOCATION:
+    - '%player% murió asfixiado huyendo de %killers%.'
+    - '%player% murió sofocado escapando de %killer%.'
