@@ -1,0 +1,8 @@
+name: LCDeathMessages
+version: '${version}'
+main: lc.deathmessages.LCDeathMessages
+commands:
+  lcdeathmessages:
+    aliases:
+      - lcdm
+      - deathmessages
